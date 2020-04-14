@@ -1,8 +1,8 @@
 #  Dotnet Core Swagger Authorisation  ![GitHub release](https://img.shields.io/github/release/ajeetx/DotnetCoreSwaggerAuthorisation.svg?style=for-the-badge) ![Maintenance](https://img.shields.io/maintenance/yes/2020.svg?style=for-the-badge)
 
-### DotnetCoreSwaggerAuthorisation
+### AspDotnet Core Swagger Jwt Authentication and Authorisation
 
-[![.Net Framework](https://img.shields.io/badge/DotNet-2.2_Framework-blue.svg?style=plastic)](https://www.microsoft.com/net/download/dotnet-core/2.1)  | ![GitHub language count](https://img.shields.io/github/languages/count/ajeetx/DotnetCoreSwaggerAuthorisation.svg) | ![GitHub top language](https://img.shields.io/github/languages/top/ajeetx/DotnetCoreSwaggerAuthorisation.svg) |![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ajeetx/DotnetCoreSwaggerAuthorisation.svg) 
+[![.Net Framework](https://img.shields.io/badge/DotNet-2.2_Framework-blue.svg?style=plastic)](https://www.microsoft.com/net/download/dotnet-core/)  | ![GitHub language count](https://img.shields.io/github/languages/count/ajeetx/DotnetCoreSwaggerAuthorisation.svg) | ![GitHub top language](https://img.shields.io/github/languages/top/ajeetx/DotnetCoreSwaggerAuthorisation.svg) |![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ajeetx/DotnetCoreSwaggerAuthorisation.svg) 
 | --- | ---          | ---        | ---      | 
 
 ---------------------------------------
