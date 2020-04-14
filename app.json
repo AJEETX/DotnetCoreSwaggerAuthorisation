@@ -1,0 +1,11 @@
+{
+    "name": ".net core REST API",
+    "description": "Dotnet Core Swagger Authentication and Authorisation API ",
+    "keywords": [
+      ".netcore",
+      "REST API"
+    ],
+    "website": "https://ajeetx.github.io",
+    "repository": "https://github.com/AJEETX/DotnetCoreSwaggerAuthorisation.git",
+    "logo": "https://nodejs.org/images/logos/nodejs.png"
+  }
