@@ -13,9 +13,9 @@ namespace Jwt.Services
 {
     public interface IUserService
     {
-        User Authenticate(string username, string password);
-        IEnumerable<User> GetAll();
-        User GetById(int id);
+        UserModel Authenticate(string username, string password);
+        IEnumerable<UserModel> GetAll();
+        UserModel GetById(int id);
     }
     public class UserService : IUserService
     {
@@ -31,7 +31,7 @@ namespace Jwt.Services
         {
             _appSettings = appSettings.Value;
         }
-        public User Authenticate(string username, string password)
+        public UserModel Authenticate(string username, string password)
         {
             var user = _users.SingleOrDefault(x => x.Username == username && x.Password == password);
 
@@ -54,30 +54,42 @@ namespace Jwt.Services
             var token = tokenHandler.CreateToken(tokenDescriptor);
             user.Token = tokenHandler.WriteToken(token);
 
-            // remove password before returning
-            user.Password = null;
-
-            return user;
+            return new UserModel{
+                Id= user.Id, 
+                FirstName=user.FirstName, 
+                LastName=user.LastName, 
+                Username=user.Username, 
+                Token=user.Token,
+                Role=user.Role
+                };
         }
 
-        public IEnumerable<User> GetAll()
+        public IEnumerable<UserModel> GetAll()
         {
-            // return users without passwords
-            return _users.Select(x => {
-                x.Password = null;
-                return x;
+            return _users.Select(u => new UserModel {
+                Id=u.Id, 
+                FirstName=u.FirstName, 
+                LastName=u.LastName,
+                Username=u.Username,
+                Token=u.Token,
+                Role=u.Role
             });
         }
 
-        public User GetById(int id)
+        public UserModel GetById(int id)
         {
             var user = _users.FirstOrDefault(x => x.Id == id);
 
-            // return user without password
             if (user != null)
-                user.Password = null;
-
-            return user;
+                return new UserModel{
+                    Id= user.Id, 
+                    FirstName=user.FirstName, 
+                    LastName=user.LastName, 
+                    Username=user.Username, 
+                    Token=user.Token,
+                    Role=user.Role
+                    };
+            return null;
         }
     }
 }

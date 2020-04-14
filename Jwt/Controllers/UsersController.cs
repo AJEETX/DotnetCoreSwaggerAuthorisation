@@ -24,7 +24,7 @@ namespace Jwt.Controllers
 
         [AllowAnonymous]
         [HttpPost("authenticate")]
-        public IActionResult Authenticate([FromBody]User userParam)
+        public IActionResult Authenticate([FromBody]UserViewModel userParam)
         {
             var user = _userService.Authenticate(userParam.Username, userParam.Password);
 
