@@ -11,6 +11,32 @@
 
  <img width="100%" src="screen-capture.gif" />
 
+#### Login
+
+ ``` 
+ To access the /users endpoint
+```
+>    username :admin
+
+>    password :admin
+
+
+
+ <img width="100%" src="admin.png" />
+
+
+#### Login
+
+ ``` 
+ To access the /users/{id} endpoint
+```
+>    username :user
+
+>    password :user
+
+
+ <img width="100%" src="user.png" />
+
  
 
 [![Deploy on Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/ajeetx/DotnetCoreSwaggerAuthorisation)
